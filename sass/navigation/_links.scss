@@ -1,0 +1,42 @@
+a {
+
+	color: $color__link;
+    text-decoration: none;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+
+
+.button-link {
+  padding: 10px 20px;
+  margin: 0rem 0;
+  background-color: $color__link;
+  width: auto;
+  transition: background-color 1s ease;
+}
+.button-link:hover {
+  background-color: darken($color__link, 9%);
+}
+
+a.button-link {
+  color: #ffffff;
+}
+
+a:visited.button-link {
+  color: #ffffff;
+}

@@ -1,0 +1,150 @@
+.main-navigation {
+	display: block;
+	float: left;
+	width: 80%;
+    padding-left: 0rem;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0.4rem;
+        padding-top: 0.4rem;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a {
+			}
+
+			a:hover {
+			}
+		}
+
+		li:hover > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+        padding: 0 4%;
+
+		&:hover > a {
+		}
+	}
+	a {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 200;
+      display: block;
+		text-decoration: none;
+        color: #787878;
+        font-size: 0.8rem;
+
+    }
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+}
+.menu-toggle {
+	display: none;
+}
+
+
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	& .nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	& .nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+
+// Medium screens
+
+@media only screen and (min-width: 40.0625em) and (max-width:64em) {
+
+  .main-navigation {
+    width: 60%;
+    ul {
+      padding-top: 0.5rem;
+    }
+
+    a {
+      font-size: 1rem
+    }
+  }
+
+} /* min-width 641px to max-width 1024px */
+
+
+// Large screens
+
+@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+
+  .main-navigation {
+    width: 80%;
+    ul {
+      padding-top: 0.5rem;
+    }
+
+    a {
+      font-size: 1.1rem
+    }
+  }
+
+} /* min-width 1025px to max-width 1440px */
+
+
+// xtra-Large screens
+
+@media only screen and (min-width: 90.0625em) {
+
+  .main-navigation {
+    width: 60%;
+    float:left;
+    ul {
+      padding-top: 0.2rem;
+    }
+
+    a {
+      font-size: 1.3rem
+    }
+  }
+
+} /* min-width 1441 */

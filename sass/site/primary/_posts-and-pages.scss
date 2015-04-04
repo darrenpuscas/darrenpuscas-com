@@ -1,0 +1,141 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.grid {
+  display: block;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.row-top-pad, .row-tb-pad  {
+  padding-top: 8%;
+}
+.row-bottom-pad, .row-tb-pad  {
+  padding-bottom: 8%;
+}
+.figure-content-margin {
+  padding-top: 3%;
+}
+.text-content-area {
+  max-width: 530px;
+  width: 84%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.image-content-area {
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 98%;
+}
+
+// Medium screens
+
+@media only screen and (min-width: 40.0625em) and (max-width:64em) {
+
+
+  .row-top-pad, .row-tb-pad  {
+    padding-top: 10%;
+  }
+  .row-bottom-pad, .row-tb-pad  {
+    padding-bottom: 10%;
+  }
+  .text-content-area {
+    max-width: 640px;
+    width: 80%;
+  }
+  .image-content-area {
+    max-width: 1000px;
+    width: 98%;
+  }
+  .figure-content-margin {
+    padding-top: 2%;
+  }
+
+
+} /* min-width 641px to max-width 1024px */
+
+
+// Large screens
+
+@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+
+
+  .row-top-pad, .row-tb-pad  {
+    padding-top: 8%;
+  }
+  .row-bottom-pad, .row-tb-pad  {
+    padding-bottom: 8%;
+  }
+  .text-content-area {
+    width: 90%;
+    max-width: 940px;
+  }
+  .image-content-area {
+    max-width: 1300px;
+    width: 100%;
+  }
+  .figure-content-margin {
+    padding-top: 4%;
+  }
+
+
+
+
+} /* min-width 1025px to max-width 1440px */
+
+
+// xtra-Large screens
+
+@media only screen and (min-width: 90.0625em) {
+
+  .row-top-pad, .row-tb-pad  {
+    padding-top: 9%;
+  }
+  .row-bottom-pad, .row-tb-pad  {
+    padding-bottom: 11%;
+  }
+
+  .text-content-area {
+    width: 70%;
+    max-width: 800px;
+  }
+
+  .image-content-area {
+    max-width: 1300px;
+    width: 100%;
+  }
+  .figure-content-margin {
+    padding-top: 3.5%;
+  }
+
+
+} /* min-width 1441px */
