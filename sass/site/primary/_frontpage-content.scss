@@ -1,4 +1,13 @@
 
+.front-description-header {
+  margin: 2% auto 6%;
+}
+.front-description-text {
+
+}
+.home-main-thumb {
+
+}
 
 
 .frontpage-button-link {
@@ -48,12 +57,15 @@
 }
 
 #frontpage-description h1 {
-  max-width: 70%;
+  max-width: 100%;
 }
 #frontpage-description-2 p {
-  font-family: $font__headings;
   margin: 0.7rem 0 0rem;
 }
+#frontpage-description-2 {
+  clear: both;
+}
+
 .front-work h1, .frontblog h1  {
   max-width: 30%;
 }
@@ -111,9 +123,9 @@
   .frontpage-button-link {
     text-align: center;
     font-size: 1.3rem;
-    margin-top: 8%;
-    margin-bottom: 7%;
-    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    width: 66%;
   }
   #frontpage-description h1 {
   }

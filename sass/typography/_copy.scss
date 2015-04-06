@@ -1,7 +1,7 @@
 p {
-  margin: 2rem 0 1.2rem;
+  margin: 0.1rem 0 1.2rem;
   font-family: $font__main;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
   color: $color__text-main;
   line-height: 1.7;
@@ -59,8 +59,8 @@ big {
 @media only screen and (min-width: 40.0625em) and (max-width:64em) {
 
   p {
-    margin: 4rem 0 1.2rem;
-    font-size: 1.3rem;
+    margin: 0.6rem 0 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     text-transform: none;
   }
@@ -72,8 +72,8 @@ big {
 @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
 
   p {
-    margin: 4rem 0 1.2rem;
-    font-size: 1.6rem;
+    margin: 0.7rem 0 1.2rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     text-transform: none;
   }
@@ -88,9 +88,9 @@ big {
 
 
   p {
-    margin: 1rem 0 1.2rem;
-    font-size: 1.3rem;
-    line-height: 1.8;
+    margin: 0.7rem 0 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
     text-transform: none;
     max-width: 640px;
   }

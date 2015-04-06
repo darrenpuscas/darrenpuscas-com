@@ -7,21 +7,29 @@ Template Name: Front Page
 <?php get_header(); ?>
 
 
-<section id="frontpage-description" class="grid row-tb-pad">
+<section id="frontpage-description" class="row-tb-pad">
 
-    <header class="description-header text-content-area">
-        <h1>Web design<br />& WordPress<br />problem-solving<br /> </h1>
-	    <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
+    <header class="front-description-header text-content-area">
+        <div class="front-description-text">
+            <h1>Web design<br /> </h1>
+            <p>vfuowebvoregnbewrpogner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpeghwo;bh vfuowebvoregnbewrpogner;lgbwe'iwhg[oehgwpeghwo;bh</p>
+            <h1>& WordPress<br /> </h1>
+            <p>vfuowebvoregnbewrpogner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpe ner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpeghwo;bh</p>
+            <h1>& problem-solving </h1>
+            <p>vfuowebvoregnbewrpogner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpeghwo;bh </p>
+            <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
+
+        </div>
+
     </header>
 
+    <figure class="home-main-thumb image-content-area main-figure-content-margin">
 
-	<figure class="home-thumb image-content-area figure-content-margin">
+        <?php if( get_field('dp_site_description_image') ): ?>
 
-	    <?php if( get_field('dp_site_description_image') ): ?>
+            <img src="<?php the_field('dp_site_description_image'); ?>" />
 
-		    <img src="<?php the_field('dp_site_description_image'); ?>" />
-
-	    <?php endif; ?>
+        <?php endif; ?>
 
     </figure>
 
