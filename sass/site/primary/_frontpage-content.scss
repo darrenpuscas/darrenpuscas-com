@@ -2,8 +2,14 @@
 .front-description-header {
   margin: 2% auto 6%;
 }
-.front-description-text {
-
+.front-description-text h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.front-description-text p {
+  margin-top: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 .home-main-thumb {
 

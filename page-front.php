@@ -11,12 +11,12 @@ Template Name: Front Page
 
     <header class="front-description-header text-content-area">
         <div class="front-description-text">
-            <h1>Web design<br /> </h1>
-            <p>vfuowebvoregnbewrpogner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpeghwo;bh vfuowebvoregnbewrpogner;lgbwe'iwhg[oehgwpeghwo;bh</p>
-            <h1>& WordPress<br /> </h1>
-            <p>vfuowebvoregnbewrpogner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpe ner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpeghwo;bh</p>
-            <h1>& problem-solving </h1>
-            <p>vfuowebvoregnbewrpogner;lgbwe'ilfwepfwepfhwefpiwhg[oehgwpeghwo;bh </p>
+            <h2>Web design<br /> </h2>
+            <p>vfuowebvoregnbe wrpogner;lg bwe'ilfwepf wepfhwefpiwh g[oehgwpeghwo;bh vfuowebv oregnbewrpogner;lgbwe'iwh</p>
+            <h2>& WordPress<br /> </h2>
+            <p>vfuowebvoregn bewrpogner;lgbwe'ilfwepfw epfhwefpiwhg[ oehgwpe ner;lgbwe'ilfwepfwepfh wefpiwhg[oehg wpeghwo;bh</p>
+            <h2>& problem-solving </h2>
+            <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepfhwefpi whg[oehgwpeghwo;bh </p>
             <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
 
         </div>
