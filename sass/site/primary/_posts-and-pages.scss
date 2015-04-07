@@ -22,11 +22,6 @@
 	margin: 1.5em 0 0;
 }
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
 .grid {
   display: block;
   padding-left: 5%;
@@ -90,7 +85,7 @@
 
 
   .row-top-pad, .row-tb-pad  {
-    padding-top: 6%;
+    padding-top: 5%;
   }
   .row-bottom-pad, .row-tb-pad  {
     padding-bottom: 8%;
@@ -118,7 +113,7 @@
 @media only screen and (min-width: 90.0625em) {
 
   .row-top-pad, .row-tb-pad  {
-    padding-top: 4%;
+    padding-top: 6%;
   }
   .row-bottom-pad, .row-tb-pad  {
     padding-bottom: 11%;
