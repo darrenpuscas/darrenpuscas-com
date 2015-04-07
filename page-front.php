@@ -29,20 +29,10 @@ Template Name: Front Page
         <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
     </div>
 
-    <figure class="home-main-thumb image-content-area main-figure-content-margin">
-
-        <?php if( get_field('dp_site_description_image') ): ?>
-
-            <img src="<?php the_field('dp_site_description_image'); ?>" />
-
-        <?php endif; ?>
-
-    </figure>
-
 
 </section>
 
-<section id="frontpage-description-2" class="grid row-bottom-pad">
+<section id="frontpage-description-2" class="grid row-tb-pad">
 
 	<div class="home-description-list text-content-area">
 		<h1><?php the_field('dp_site_description_notes'); ?></h1>
