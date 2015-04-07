@@ -7,7 +7,7 @@
   }
 
   .blog-content p {
-    margin: 0;
+    margin: 1em 0;
 
   }
   .blog-content h2 {
@@ -28,11 +28,17 @@
     padding: 0.4rem 0.7rem;
     margin: 0.2rem 0.6rem 0 0;
     color: #fff;
-    background-color: #222;
+    background-color: $color__link_secondary;
     font-size: 0.7rem;
     float: left;
   }
-
+  .single-blog .page-links {
+    border: none;
+    padding: 0rem 0;
+  }
+.single-blog {
+  margin-top: 13%;
+}
 
   // Medium screens
 
@@ -46,7 +52,9 @@
 
   @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
 
+.blog-meta {
 
+}
 
   } /* min-width 1025px to max-width 1440px */
 
@@ -55,9 +63,13 @@
 
   @media only screen and (min-width: 90.0625em) {
 
+    .blog-meta {
+    }
 
+    .single-blog {
+      margin-top: 13%;
+    }
 
-  }
- /* min-width 1440 */
+  }  /* min-width 1440 */
 
 

@@ -11,10 +11,7 @@ Template Name: Blog Page
 
             <div class="blog row-tb-pad">
 
-                <div class="blog-section-header text-content-area">
-                    <h1>News</h1>
-                    <p>ebvrovrvbr dbeowuvrboivnvp fwebvvbwoevb fwbevowbg owbevowbgiv ownov</p>
-                </div>
+
 
                 <?php $the_query = new WP_Query( 'showposts=6' ); ?>
                 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
@@ -49,7 +46,7 @@ Template Name: Blog Page
 
 
 
-</section><!-- #front-bodycontent -->
+</section><!-- #blog-bodycontent -->
 
 
 <?php get_footer(); ?>

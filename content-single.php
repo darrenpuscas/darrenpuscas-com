@@ -5,25 +5,31 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php darrenpuscas_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+    <div class="single-blog blog-content row-tb-pad">
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'darrenpuscas' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+        <header class="entry-header blogtitle page-links">
+            <div class="blog-meta">
+            <?php the_date(); ?>
+            <div class="view-category"><?php echo get_the_category_list(); ?></div>
+                </div>
+            <h2>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </h2>
+        </header><!-- .entry-header -->
 
-	<footer class="entry-footer">
-		<?php darrenpuscas_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        <div class="entry-content">
+            <?php the_content(); ?>
+            <?php
+                wp_link_pages( array(
+                    'before' => '<div class="page-links">' . __( 'Pages:', 'darrenpuscas' ),
+                    'after'  => '</div>',
+                ) );
+            ?>
+        </div><!-- .entry-content -->
+
+    </div><!-- .blog-content -->
+
+
 </article><!-- #post-## -->
+

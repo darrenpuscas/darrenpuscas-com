@@ -119,14 +119,30 @@ function darrenpuscas_widgets_init() {
 }
 add_action( 'widgets_init', 'darrenpuscas_widgets_init' );
 
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+    register_post_type( 'web_design_article',
+        array(
+            'labels' => array(
+                'name' => __( 'Web Design Articles' ),
+                'singular_name' => __( 'Web Design Article' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
+
 /**
  * Enqueue scripts and styles.
  */
 function darrenpuscas_scripts() {
 
-    wp_enqueue_style('darrenpuscas-content-sidebar', get_template_directory_uri() . '/layouts/content-sidebar.css' );
 
     wp_enqueue_style( 'darrenpuscas-style', get_stylesheet_uri() );
+
+    wp_enqueue_style('darrenpuscas-content-sidebar', get_template_directory_uri() . '/layouts/content-sidebar.css' );
 
     wp_enqueue_script( 'darrenpuscas-superfish', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

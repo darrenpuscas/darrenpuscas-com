@@ -1249,7 +1249,7 @@ a:visited.button-link {
   margin-top: 0.5rem; }
 
 .blog-content p {
-  margin: 0; }
+  margin: 1em 0; }
 
 .blog-content h2 {
   font-weight: 700;
@@ -1258,7 +1258,7 @@ a:visited.button-link {
   max-width: 100%; }
 
 .blog-content a {
-  color: #33B6E9; }
+  color: #333333; }
 
 .blog-content ul {
   margin: 0.5rem 0 0;
@@ -1269,12 +1269,22 @@ a:visited.button-link {
   padding: 0.4rem 0.7rem;
   margin: 0.2rem 0.6rem 0 0;
   color: #fff;
-  background-color: #222;
+  background-color: #B52A3C;
   font-size: 0.7rem;
   float: left; }
 
+.single-blog .page-links {
+  border: none;
+  padding: 0rem 0; }
+
+.single-blog {
+  margin-top: 13%; }
+
 /* min-width 641px to max-width 1024px */
 /* min-width 1025px to max-width 1440px */
+@media only screen and (min-width: 90.0625em) {
+  .single-blog {
+    margin-top: 13%; } }
 /* min-width 1440 */
 /*--------------------------------------------------------------
 11.0 Infinite scroll
