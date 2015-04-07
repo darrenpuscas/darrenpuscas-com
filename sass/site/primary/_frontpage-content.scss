@@ -2,6 +2,13 @@
 .front-description-header {
   margin: 2% auto 6%;
 }
+
+.front-description-text {
+  max-width: 33%;
+  float: left;
+  margin: 0 auto;
+}
+
 .front-description-text h2 {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -61,8 +68,9 @@
 .recent-work-3 {
   border-bottom: 3px solid #222;
 }
-
-#frontpage-description h1 {
+#frontpage-description {
+}
+#frontpage-description {
   max-width: 100%;
 }
 #frontpage-description-2 p {

@@ -12,16 +12,22 @@ Template Name: Front Page
     <header class="front-description-header text-content-area">
         <div class="front-description-text">
             <h2>Web design<br /> </h2>
-            <p>vfuowebvoregnbe wrpogner;lg bwe'ilfwepf wepfhwefpiwh g[oehgwpeghwo;bh vfuowebv oregnbewrpogner;lgbwe'iwh</p>
+            <h5>vfuowebvoregnbe wrpogner;lg bwe'ilfwepf wepfhwefpiwh g[oehg wpeghwo;bh vfuowebv oregn bewrp ogner;lgb we'iwh</h5>
+            </div>
+            <div class="front-description-text">
             <h2>& WordPress<br /> </h2>
-            <p>vfuowebvoregn bewrpogner;lgbwe'ilfwepfw epfhwefpiwhg[ oehgwpe ner;lgbwe'ilfwepfwepfh wefpiwhg[oehg wpeghwo;bh</p>
+            <h5>vfuowebvoregn bewrpo gner;lgbw e'ilfwepfw epfhwefpiwhg[ oehgwpe ner;l ssgbwe 'ilfwepfwepfh wefpiwhg[oehg wpeghwo;bh</h5>
+                </div>
+            <div class="front-description-text">
             <h2>& problem-solving </h2>
-            <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepfhwefpi whg[oehgwpeghwo;bh </p>
-            <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
-
-        </div>
+            <h5>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </h5>
+                </div>
 
     </header>
+
+    <div class="front-description-text">
+        <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
+    </div>
 
     <figure class="home-main-thumb image-content-area main-figure-content-margin">
 
