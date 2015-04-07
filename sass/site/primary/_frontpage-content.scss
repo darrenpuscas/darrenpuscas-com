@@ -37,22 +37,22 @@
 
 }
 
-.frontpage-links  {
-  border-top: 1px solid #222;
-  padding: 1rem 0;
+.page-links  {
+  border-bottom: 1px solid #dedede;
+  padding: 2rem 0;
   color: #222;
 }
-.frontpage-links a {
+.page-links a {
   color: #222;
 }
-.frontpage-links h3 {
+.page-links h3 {
   padding: 0.6rem 0 0.6rem;
   margin-bottom: 0;
 }
 .front-work, .frontblog {
 
 }
-.front-work h1, .frontblog h1, .front-work h3, .frontblog h3 {
+.front-work h1, .blog h1, .front-work h3, .blog h3 {
   padding-bottom: 0.5rem;
   max-width: 100%;
   padding-left: 5%;
@@ -72,7 +72,7 @@
   clear: both;
 }
 
-.front-work h1, .frontblog h1  {
+.front-work h1, .blog h1  {
   max-width: 30%;
 }
 
@@ -90,7 +90,7 @@
   }
   #frontpage-description h1 {
   }
-  .front-work h1, .frontblog h1, .front-work h3, .frontblog h3 {
+  .front-work h1, .blog h1, .front-work h3, .blog h3 {
     padding-bottom: 0rem;
     padding-left: 5%;
   }
@@ -112,7 +112,7 @@
   }
   #frontpage-description h1 {
   }
-  .front-work h1, .frontblog h1, .front-work h3, .frontblog h3 {
+  .front-work h1, .blog h1, .front-work h3, .blog h3 {
     padding-bottom: 0rem;
     padding-left: 0%;
   }
@@ -136,16 +136,16 @@
   #frontpage-description h1 {
   }
 
-  .frontpage-links {
-    padding: 1rem 0 1rem;
+  .page-links {
+    padding: 3.2rem 0 3.2rem;
   }
-  .front-work h1, .frontblog h1, .front-work h3, .frontblog h3 {
+  .front-work h1, .blog h1, .front-work h3, .blog h3 {
     padding-bottom: 0rem;
     padding-left: 0%;
   }
 
 
 
-} /* min-width 144 */
+} /* min-width 1440 */
 
 

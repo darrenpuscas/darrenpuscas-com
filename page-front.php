@@ -76,19 +76,19 @@ Template Name: Front Page
             </div>
 
 
-            <div class="frontblog row-bottom-pad">
+            <div class="blog row-bottom-pad">
 
-                <div class="section-header text-content-area"><h1>Latest news</h1></div>
+                <div class="blog-section-header text-content-area"><h1>Latest news</h1></div>
 
                 <?php $the_query = new WP_Query( 'showposts=3' ); ?>
                 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
 
 
-                    <div class="frontblog-content">
-	                    <div class="frontpage-links">
+                    <div class="blog-content">
+	                    <div class="page-links text-content-area">
 
-	                        <div class="front-blogtitle text-content-area">
+	                        <div class="blogtitle">
 		                        <?php the_date(); ?>
 
 	                            <h3>
