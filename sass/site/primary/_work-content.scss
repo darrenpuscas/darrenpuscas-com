@@ -1,0 +1,107 @@
+#workpage-description {
+  margin-bottom: 4%;
+}
+
+.work-example {
+  height: 500px;
+}
+#work-example-1, #work-example-2, #work-example-3, #work-example-4 {
+  margin-bottom:3rem;
+}
+#work-example-1 .work-example {
+  background-color: $color__background_orange;
+}
+#work-example-2 .work-example {
+  background-color: $color__background_blue;
+}
+#work-example-3 .work-example {
+  background-color: $color__background_yellow;
+}
+#work-example-4 .work-example {
+  background-color: $color__background_purple;
+}
+.work-example h5 {
+  padding-bottom: 3rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.1;
+  width: 60%;
+}
+.work-example h2 {
+  color: #fff;
+  padding: 0;
+}
+
+.work-example .work-header-left, .work-example .work-header-right {
+  float: left;
+}
+ .work-example .work-header-right {
+  float: right;
+}
+
+
+
+// Medium screens
+
+@media only screen and (min-width: 40.0625em) and (max-width:64em) {
+
+  .work-example .work-header-left h5, .work-example .work-header-left h2 {
+    max-width: 100%;
+  }
+  .work-example .work-header-right {
+    max-width: 30%;
+  }
+
+} /* min-width 641px to max-width 1024px */
+
+
+// Large screens
+
+@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+
+  .work-example {
+    height: 500px;
+  }
+  .work-example .work-header-left {
+    margin: 4rem 0;
+    max-width: 60%;
+  }
+  .work-example .work-header-right {
+    max-width: 30%;
+  }
+  .work-example .work-header-left h5, .work-example .work-header-left h2 {
+    max-width: 100%;
+  }
+
+
+
+} /* min-width 1025px to max-width 1440px */
+
+
+// xtra-Large screens
+
+@media only screen and (min-width: 90.0625em) {
+
+  .work-example {
+    height: 560px;
+  }
+  .work-example .work-header-left {
+    margin: 5rem 5rem;
+    max-width: 29%;
+  }
+  .work-example .work-header-right {
+    padding: 4rem 3rem 0 0;
+    max-width: 48%;
+  }
+  .work-example .work-header-left h5, .work-example .work-header-left h2 {
+    max-width: 100%;
+  }
+  .work-example .work-header-left h2 {
+    margin-top: 1rem;
+    line-height: 1.3;
+    font-size: 3.4rem;
+  }
+
+} /* min-width 1440 */
+
+
