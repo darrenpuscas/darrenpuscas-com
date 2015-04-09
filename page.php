@@ -12,21 +12,26 @@
 get_header(); ?>
 
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+<section id="###-page-description" class="grid row-tb-pad">
 
-        <?php while ( have_posts() ) : the_post(); ?>
-
-            <?php get_template_part( 'content', 'page' ); ?>
-
-
-
-        <?php endwhile; // end of the loop. ?>
+    <header class="###-header text-content-area">
+        <h1> <?php the_field('###_header_1'); ?></h1>
+        <h3><?php the_field('###_text_1'); ?></h3>
+    </header>
 
 
+    <figure class="###-thumb image-content-area figure-content-margin">
 
-    </main><!-- #main -->
-</div><!-- #primary -->
+        <?php if( get_field('###_image_1') ): ?>
+
+            <img src="<?php the_field('###_image_1'); ?>" />
+
+        <?php endif; ?>
+
+    </figure>
+
+
+</section>
 
 
 

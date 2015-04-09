@@ -11,7 +11,7 @@ Template Name: About Page
 
     <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_1'); ?></h1>
-        <h3><?php the_field('about_text_1'); ?></h3>
+        <p><?php the_field('about_text_1'); ?></p>
     </header>
 
 

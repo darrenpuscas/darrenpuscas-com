@@ -9,6 +9,8 @@ Template Name: Blog Page
 
 <section id="blog-bodycontent">
 
+
+
             <div class="blog row-tb-pad">
 
 
@@ -25,10 +27,11 @@ Template Name: Blog Page
 		                        <?php the_date(); ?>
                                 <h2>
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                    <div class="view-category"><?php echo get_the_category_list(); ?></div>
 
                                 </h2>
                                 <p><?php the_excerpt(); ?></p>
+                                <h5> Read more...</h5>
+
 
                             </div>
 

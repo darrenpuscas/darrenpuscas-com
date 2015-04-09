@@ -7,17 +7,19 @@
   }
 
   .blog-content p {
-    margin: 1em 0;
+    margin: 0.1em 0;
+    font-size: 1.1rem;
+
 
   }
   .blog-content h2 {
     font-weight: 700;
     padding-top: 0.4rem;
-    font-size: 4rem;
+    font-size: 2.4rem;
     max-width: 100%;
   }
   .blog-content a {
-    color: $color__headings_alt;
+    color: $color__headings;
   }
   .blog-content ul {
     margin: 0.5rem 0 0;
@@ -67,7 +69,7 @@
     }
 
     .single-blog {
-      margin-top: 13%;
+      margin-top: 8%;
     }
 
   }  /* min-width 1440 */

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="text-content-area">
+	<div id="primary" class="grid row-bottom-pad">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>

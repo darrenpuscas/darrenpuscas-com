@@ -25,12 +25,12 @@ a {
 .button-link {
   padding: 10px 20px;
   margin: 0rem 0;
-  background-color: $color__link;
+  background-color: $color__link_secondary;
   width: auto;
   transition: background-color 1s ease;
 }
 .button-link:hover {
-  background-color: darken($color__link, 9%);
+  background-color: darken($color__link_secondary, 9%);
 }
 
 a.button-link {

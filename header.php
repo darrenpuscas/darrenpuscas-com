@@ -28,7 +28,12 @@
         <div class="site-header">
 
 
-                <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
+                <div class="site-title">
+                    <i class="fa fa-chevron-circle-up"></i>
+
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+
+                </div>
 
 
                 <nav id="site-navigation" class="main-navigation" role="navigation">

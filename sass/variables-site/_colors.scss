@@ -8,23 +8,22 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: #33B6E9;
-$color__link-visited: darken($color__link, 10%);
-$color__link-hover: darken($color__link, 10%);
-$color__link_secondary: #B52A3C;
-$color__text-main: #444444;
+$color__link: #501cf0;
+$color__link-visited: darken($color__link, 5%);
+$color__link-hover: darken($color__link, 5%);
+$color__link_secondary:  #f0205a;
+$color__text-main: #676767;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
+$color__border-input: #898989;
 $color__border-abbr: #666;
 
 $color__headings: #343434;
-$color__headings_alt: #333333;
+$color__headings_alt: #787878;
 
-$color__background_purple: #bc0a98;
-$color__background_blue: #33B6E9;
-$color__background_yellow: #FBC90C;
 $color__background_orange: #fa5a07;
-
+$color__background_blue: #00ABF6;
+$color__background_yellow: #FBC90C;
+$color__background_red: #f0003e;

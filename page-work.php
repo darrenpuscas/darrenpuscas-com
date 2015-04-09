@@ -12,7 +12,7 @@ Template Name: Work Page
 
     <header class="work-header text-content-area">
         <h1> <?php the_field('work_header_1'); ?></h1>
-        <h3><?php the_field('work_text_1'); ?></h3>
+        <p><?php the_field('work_text_1'); ?></p>
     </header>
 
 </section>

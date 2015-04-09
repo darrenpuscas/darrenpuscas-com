@@ -6,7 +6,7 @@ input[type="search"],
 textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
-	border-radius: 3px;
+	border-radius: 2px;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -18,10 +18,69 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 3px 5px;
 }
 
 textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+// Gravity Forms
+
+.gform_body {
+  border-top: 1px solid #cdcdcd;
+}
+
+.gform_wrapper .top_label .gfield_label {
+  margin: 1em 0 0em !important;
+  font-weight: 400!important;
+  $color__headings_alt: #565656;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
+  padding: 8px 10px!important;
+}
+
+body .gform_wrapper label.gfield_label+div.ginput_container {
+  margin-top: .2em!important;
+}
+
+
+
+// Medium screens
+
+@media only screen and (min-width: 40.0625em) and (max-width:64em) {
+
+
+} /* min-width 641px to max-width 1024px */
+
+
+// Large screens
+
+@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+  .gform_wrapper {
+    margin-top: 1.3rem!important;
+    padding: 1.2em 0em 0;
+  }
+
+} /* min-width 1025px to max-width 1440px */
+
+
+// xtra-Large screens
+
+@media only screen and (min-width: 90.0625em) {
+  .gform_body {
+    margin-top: 2rem;
+  }
+  .gform_wrapper {
+    padding: 1em 0 0;
+  }
+  .gform_wrapper .top_label .gfield_label {
+    font-size: 1.1rem;
+    line-height: 1.4!important;
+    margin: 3rem 0 0.4rem!important;
+  }
+
+}  /* min-width 1440 */
+
+
