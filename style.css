@@ -416,7 +416,7 @@ h5, h6 {
     font-weight: 400;
     margin: 1.2em 0 8px;
     margin: 1.2em 0 .5rem;
-    line-height: 1.7;
+    line-height: 1.8;
     max-width: 600px;
     letter-spacing: 0em; } }
 /* min-width 1441 */
@@ -759,7 +759,7 @@ a:visited.button-link {
     position: relative;
     padding: 0 4%; }
   .main-navigation a {
-    font-family: "Mercury SSm A", "Mercury SSm B", sans-serif;
+    font-family: "Whitney SSm A", "Whitney SSm B", sans-serif, sans-serif;
     font-weight: 200;
     display: block;
     text-decoration: none;
