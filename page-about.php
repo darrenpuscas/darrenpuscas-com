@@ -30,13 +30,13 @@ Template Name: About Page
 
 <section id="aboutpage-description-2" class="grid row-bottom-pad">
 
-    <header class="about-header text-content-area">
+    <header class="about-header text-content-area animatable fadeIn">
         <h1> <?php the_field('about_header_2'); ?></h1>
         <h5><?php the_field('about_text_2'); ?></h5>
     </header>
 
 
-    <figure class="about-thumb image-content-area figure-content-margin">
+    <figure class="about-thumb image-content-area figure-content-margin animatable fadeIn">
 
         <?php if( get_field('about_image_2') ): ?>
 
