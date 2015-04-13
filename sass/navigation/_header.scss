@@ -2,14 +2,14 @@
 
 .site-header {
   margin: 1.5rem auto 0rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   height: auto;
   max-width: 530px;
   width: 84%;
 }
 
 .site-title {
-  font-family: $font__headings;
+  font-family: $font__main;
   text-decoration: none;
   width: 20%;
   text-align: left;
@@ -67,7 +67,7 @@
 
   .site-header {
     width: 90%;
-    max-width: 940px;
+    max-width: 800px;
   }
 
   .site-title {

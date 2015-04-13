@@ -14,7 +14,7 @@ Template Name: Contact Page
 
         </header>
         <div class="contact-form text-content-area">
-            <?php the_field('contact_text_1'); ?>
+            <h5><?php the_field('contact_text_1'); ?></h5>
         </div>
 
         <figure class="contact-thumb image-content-area figure-content-margin">

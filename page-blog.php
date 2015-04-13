@@ -11,7 +11,7 @@ Template Name: Blog Page
 
 
 
-            <div class="blog row-tb-pad">
+            <div class="blog row-tb-pad grid">
 
 
 
@@ -25,11 +25,10 @@ Template Name: Blog Page
 
 	                        <div class="blogtitle">
 		                        <?php the_date(); ?>
-                                <h2>
+                                <h3>
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-
-                                </h2>
-                                <p><?php the_excerpt(); ?></p>
+                                </h3>
+                                <?php the_excerpt(); ?>
                                 <h5> Read more...</h5>
 
 

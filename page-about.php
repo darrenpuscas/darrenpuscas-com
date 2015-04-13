@@ -7,11 +7,11 @@ Template Name: About Page
 <?php get_header(); ?>
 
 
-<section id="aboutpage-description" class="grid row-tb-pad">
+<section id="aboutpage-description" class="grid row-top-pad">
 
     <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_1'); ?></h1>
-        <p><?php the_field('about_text_1'); ?></p>
+        <h5><?php the_field('about_text_1'); ?></h5>
     </header>
 
 
@@ -32,7 +32,7 @@ Template Name: About Page
 
     <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_2'); ?></h1>
-        <p><?php the_field('about_text_2'); ?></p>
+        <h5><?php the_field('about_text_2'); ?></h5>
     </header>
 
 
@@ -53,7 +53,7 @@ Template Name: About Page
 
     <header class="about-header text-content-area">
         <h1><?php the_field('about_header_3'); ?> </h1>
-        <p><?php the_field('about_text_3'); ?></p>
+        <h5><?php the_field('about_text_3'); ?></h5>
     </header>
 
 
@@ -74,7 +74,7 @@ Template Name: About Page
 
     <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_4'); ?></h1>
-        <p><?php the_field('about_text_4'); ?></p>
+        <h5><?php the_field('about_text_4'); ?></h5>
     </header>
 
 
@@ -95,7 +95,7 @@ Template Name: About Page
 
     <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_5'); ?></h1>
-        <p><?php the_field('about_text_5'); ?></p>
+        <h5><?php the_field('about_text_5'); ?></h5>
     </header>
 
 

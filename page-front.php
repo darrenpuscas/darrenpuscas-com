@@ -7,36 +7,80 @@ Template Name: Front Page
 <?php get_header(); ?>
 
 
-<section id="frontpage-description" class="row-tb-pad">
+<section id="frontpage-description" class="grid row-tb-pad">
 
-    <header class="front-description-header text-content-area">
-        <div class="front-description-text">
-            <h2>Web design<br /> </h2>
-            <h5>vfuowebvoregnbe wrpogner;lg bwe'ilfwepf wepfhwefpiwh g[oehg wpeghwo;bh vfuowebv oregn bewrp ogner;lgb we'iwh</h5>
+    <div class="front-content text-content-area">
+
+        <header class="front-description-header">
+            <div class="front-description-text">
+                <h2>Web design<br /> </h2>
             </div>
             <div class="front-description-text">
-            <h2>& WordPress<br /> </h2>
-            <h5>vfuowebvoregn bewrpo gner;lgbw e'ilfwepfw epfhwefpiwhg[ oehgwpe ner;l ssgbwe 'ilfwepfwepfh wefpiwhg[oehg wpeghwo;bh</h5>
-                </div>
+                <h4>Web design<br /> </h4>
+                <p>vfuowebvoregnbe wrpogner;lg bwe'ilfwepf wepfhwefpiwh g[oehg wpeghwo;bh vfuowebv oregn bewrp ogner;lgb we'iwh</p>
+            </div>
             <div class="front-description-text">
-            <h2>& problem-solving </h2>
-            <h5>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </h5>
+                <h4>& WordPress<br /> </h4>
+                <p>vfuowebvoregn bewrpo gner;lgbw e'ilfwepfw epfhwefpiwhg[ oehgwpe ner;l ssgbwe 'ilfwepfwepfh wefpiwhg[oehg wpeghwo;bh</p>
+            </div>
+
+
+
+            <div class="front-description-text">
+                <h4>& User Experience </h4>
+                <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </p>
+            </div>
+
+
+
+
+
+        </header>
+
+        <div class="home_image home_image-1">
+
+            <div class="">
+
+
+                <div class="front-description-text">
+                    <h4>& Communications / Content Strategy </h4>
+                    <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </p>
                 </div>
 
-    </header>
+                <p><?php if( get_field('dp_site_description_image') ): ?>
 
-    <div class="front-description-text">
-        <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
+                    <img src="<?php the_field('dp_site_description_image'); ?>" />
+
+                <?php endif; ?></p>
+
+                <div class="front-description-text">
+                    <h4>& problem-solving </h4>
+                    <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </p>
+                </div>
+
+                <div class="front-description-text">
+                    <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
+                </div>
+
+
+
+            </div>
+
+        </div>
     </div>
-
 
 </section>
 
-<section id="frontpage-description-2" class="grid row-tb-pad">
+
+
+
+
+
+<section id="frontpage-description-2" class="grid row-bottom-pad">
 
 	<div class="home-description-list text-content-area">
 		<h1><?php the_field('dp_site_description_notes'); ?></h1>
-		<p>User experience design, Email design and marketing, WordPress site design & development, WordPress support.</p>
+		<h5>User experience design, Email design and marketing, WordPress site design & development, WordPress support.</h5>
 	</div>
 
 	<figure class="home-thumb image-content-area figure-content-margin">

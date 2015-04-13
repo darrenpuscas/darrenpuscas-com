@@ -15,6 +15,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <script src="//use.typekit.net/vts8skf.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7707954/783346/css/fonts.css" />
 <?php wp_head(); ?>
 </head>
 
@@ -23,7 +24,7 @@
 <div id="page" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'locals-theme' ); ?></a>
 
-    <header id="masthead" class="grid" role="banner">
+    <header id="masthead" class="grid head" role="banner">
 
         <div class="site-header">
 
