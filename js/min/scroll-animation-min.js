@@ -1,0 +1,1 @@
+jQuery(function($){var o=function(){var i=$(window).scrollTop()+$(window).height(),a=$(".animatable");0==a.size()&&$(window).off("scroll",o),a.each(function(o){var a=$(this);a.offset().top+a.height()-20<i&&a.removeClass("animatable").addClass("animated")})};$(window).on("scroll",o),$(window).trigger("scroll")});

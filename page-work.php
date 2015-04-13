@@ -8,6 +8,9 @@ Template Name: Work Page
 <?php get_header(); ?>
 
 
+<div class="workpage">
+
+
 <section id="workpage-description" class="grid row-top-pad">
 
     <header class="work-header text-content-area">
@@ -20,7 +23,7 @@ Template Name: Work Page
 
 
 
-<section id="work-example-1" class="grid">
+<section id="work-example-1" class="grid  animatable fadeInUp">
 
     <div class="work-example work-example-content image-content-area">
 
@@ -50,7 +53,7 @@ Template Name: Work Page
 
 </section>
 
-<section id="work-example-2" class="grid">
+<section id="work-example-2" class="grid animatable fadeInUp">
 
     <div class="work-example work-example-content image-content-area">
 
@@ -80,7 +83,7 @@ Template Name: Work Page
 
 </section>
 
-<section id="work-example-3" class="grid">
+<section id="work-example-3" class="grid animatable fadeInUp">
 
     <div class="work-example work-example-content image-content-area">
 
@@ -115,7 +118,7 @@ Template Name: Work Page
     <div class="work-example work-example-content image-content-area">
 
         <header class="work-header">
-            <div class="work-header-left site-header">
+            <div class="work-header-left site-header animatable fadeInUp">
                 <h3> <?php the_field('work_example_1_header'); ?></h3>
                 <h2><?php the_field('work_example_1_text'); ?></h2>
             </div>
@@ -207,7 +210,7 @@ Template Name: Work Page
 </section>
 
 
-
+</div>
 
 
 
