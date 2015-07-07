@@ -4,23 +4,17 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+  width: 100%;
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
 	border-radius: 2px;
+  padding: 14px 0 14px 10px!important;
+  margin: 0px 6px 12px 0!important;
 
 	&:focus {
 		color: $color__text-input-focus;
 	}
 }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	padding: 3px 5px;
-}
-
 textarea {
 	padding-left: 3px;
 	width: 100%;
@@ -29,27 +23,82 @@ textarea {
 // Gravity Forms
 
 .gform_body {
-  border-top: 1px solid #cdcdcd;
+  ul {
+    list-style: none;
+    padding: 0em 0 1em;
+  }
+  li {
+    margin-top: 2rem;
+  }
+}
+.gform_body
+input[type="text"] {
+  width: 100%;
+}
+.gform_body
+input[type="email"] {
+  width: 100%;
 }
 
 .gform_wrapper .top_label .gfield_label {
   margin: 1em 0 0em !important;
-  font-weight: 400!important;
-  $color__headings_alt: #565656;
-}
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
-  padding: 8px 10px!important;
+  font-weight: 500!important;
+  font-family: $font__main;
+  color: $color__headings;
 }
 
 body .gform_wrapper label.gfield_label+div.ginput_container {
-  margin-top: .2em!important;
+  margin-top: 0.4em!important;
 }
+
+.name_first, .name_last {
+  font-size: 0.7rem!important;
+  margin-right: 16px;
+  margin-right: 1rem;
+  label {
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    float: left;
+  }
+  }
+
 
 
 
 // Medium screens
 
 @media only screen and (min-width: 40.0625em) and (max-width:64em) {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"] {
+    padding-left: 20px!important;
+  }
+
+  // Gravity Forms
+
+
+  .gform_body
+  input[type="text"] {
+    width: 50%;
+  }
+  .gform_body
+  input[type="email"] {
+    width: 50%;
+  }
+  .name_first, .name_last {
+    input[type="text"] {
+      width: 42%;
+    }
+    label {
+      float: none;
+    }
+  }
+  body .gform_wrapper label.gfield_label+div.ginput_container {
+    margin-top: 0.4em!important;
+  }
 
 
 } /* min-width 641px to max-width 1024px */
@@ -58,9 +107,39 @@ body .gform_wrapper label.gfield_label+div.ginput_container {
 // Large screens
 
 @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"] {
+    width: 60%;
+    padding-left: 20px!important;
+  }
+
+  // Gravity Forms
+  .gform_body
+  input[type="text"] {
+    width: 50%;
+  }
+  .gform_body
+  input[type="email"] {
+    width: 50%;
+  }
+  .name_first, .name_last {
+    input[type="text"], {
+      width: 42%;
+    }
+    label {
+      float: none;
+    }
+  }
   .gform_wrapper {
-    margin-top: 1.3rem!important;
+    margin-top: 1.3em!important;
     padding: 1.2em 0em 0;
+  }
+  body .gform_wrapper label.gfield_label+div.ginput_container {
+    margin-top: 0.8em!important;
   }
 
 } /* min-width 1025px to max-width 1440px */
@@ -69,16 +148,51 @@ body .gform_wrapper label.gfield_label+div.ginput_container {
 // xtra-Large screens
 
 @media only screen and (min-width: 90.0625em) {
-  .gform_body {
-    margin-top: 2rem;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"] {
+    padding-left: 20px!important;
+    width: 60%;
   }
+
+  // Gravity Forms
+
+  .gform_body
+    input[type="text"] {
+      width: 50%;
+  }
+  .gform_body
+    input[type="email"] {
+      width: 50%;
+  }
+  .gform_body {
+    margin-top: 2em;
+    ul {
+      padding: 0em 0em 0;
+    }
+  }
+  .name_first, .name_last {
+    input[type="text"] {
+      width: 42%;
+    }
+    label {
+      float: none;
+    }
+  }
+
   .gform_wrapper {
-    padding: 1em 0 0;
+    padding: 0em 0 0;
   }
   .gform_wrapper .top_label .gfield_label {
-    font-size: 1.1rem;
+    @include font-size(1.1);
     line-height: 1.4!important;
-    margin: 3rem 0 0.4rem!important;
+    margin: 3em 0 0.4rem!important;
+  }
+  body .gform_wrapper label.gfield_label+div.ginput_container {
+    margin-top: 0.8em!important;
   }
 
 }  /* min-width 1440 */

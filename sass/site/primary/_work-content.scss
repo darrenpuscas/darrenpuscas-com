@@ -1,56 +1,134 @@
-#workpage-description {
-  margin-bottom: 4%;
-}
-
-.work-example {
-  height: 500px;
-}
-#work-example-1, #work-example-2, #work-example-3, #work-example-4 {
-  margin-bottom:3rem;
-}
 #work-example-1 .work-example {
   background-color: $color__background_blue;
 }
 #work-example-2 .work-example {
-  background-color: $color__background_orange;
-}
-#work-example-3 .work-example {
-  background-color: $color__background_yellow;
-}
-#work-example-4 .work-example {
   background-color: $color__background_red;
 }
-.work-example h5 {
-  padding-bottom:3rem;
-  color: #fff;
-  font-weight: 300;
-  line-height: 1.1;
-  width: 60%;
+#work-example-3 .work-example {
+  background-color: $color__background_violet;
 }
-.work-example h2 {
-  color: #fff;
-  padding: 0;
+#work-example-4 .work-example {
+  background-color: $color__background_green;
 }
-
-.work-example .work-header-left, .work-example .work-header-right {
-  float: left;
+#work-example-1, #work-example-2, #work-example-3, #work-example-4 {
+  margin-bottom: 15%;
+  margin-top: 3%;
+  p {
+    @include font-size(0.9);
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
 }
- .work-example .work-header-right {
-  float: right;
+.work-example {
+  p {
+    padding-bottom: 0.4em;
+    color: #fff;
+    font-family: $font__headings;
+    font-style: italic;
+  }
+  padding: 2.1rem 0;
 }
-
-
+.work-example .work-header-left {
+  max-width: 100%;
+  width: 100%;
+  order: 2;
+  h2 {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: 1.3;
+    @include font-size(1.9);
+  }
+  h4 {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-weight: 700;
+  }
+}
+.work-example .work-image-right {
+  max-width: 80%;
+  width: 80%;
+  order: 1;
+  margin: 0 auto;
+}
+.work-example .work-links {
+  margin-top: 1em;
+  p {
+    padding: 0.1em 0em;
+  }
+  a {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 0.1rem 0rem;
+    border-radius: 0px;
+    font-weight: 400;
+    font-family: $font__headings;
+    text-transform: uppercase;
+    @include font-size(0.8);
+    line-height: 1.8;
+  }
+}
+.work-area {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 
 // Medium screens
 
 @media only screen and (min-width: 40.0625em) and (max-width:64em) {
 
-  .work-example .work-header-left h5, .work-example .work-header-left h2 {
+  #work-example-1, #work-example-2, #work-example-3, #work-example-4 {
+    margin-bottom: 8%;
+    margin-top: 0%;
+    p {
+      @include font-size(1);
+      line-height: 1.45;
+      margin-top: 0;
+      float: left;
+    }
+  }
+  .work-example {
+    height: auto;
+    margin-bottom: 1.8em;
+    padding: 3em 0;
+    p {
+      padding-bottom: 0em;
+      margin-bottom: 0.4em;
+    }
+  }
+  .work-example .work-header-left {
+    margin: 2.2em 0 2.2em;
+    width: 50%;
+    order: 1;
+  }
+  .work-example .work-image-right {
+    padding-top: 1.4em;
+    padding-bottom: 1em;
+    width: 42%;
+    order: 2;
+  }
+  .work-example .work-header-left h4, .work-example .work-header-left h2 {
     max-width: 100%;
   }
-  .work-example .work-header-right {
-    max-width: 30%;
+  .work-example .work-header-left h4 {
+    padding-bottom: 0.2em;
   }
+  .work-example .work-header-left h2 {
+    padding: 0.4em 0 0.8em;
+    @include font-size(1.8);
+  }
+  .work-example .work-links a {
+    @include font-size(0.7);
+  }
+
 
 } /* min-width 641px to max-width 1024px */
 
@@ -59,20 +137,54 @@
 
 @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
 
+  #work-example-1, #work-example-2, #work-example-3, #work-example-4 {
+    margin-bottom: 9%;
+    margin-top: 2%;
+    p {
+      @include font-size(1.2);
+      line-height: 1.55;
+      margin-top: 0;
+      float: left;
+    }
+  }
   .work-example {
-    height: 500px;
-  }
-  .work-example .work-header-left {
-    margin: 4rem 0;
-    max-width: 60%;
-  }
-  .work-example .work-header-right {
-    max-width: 30%;
-  }
-  .work-example .work-header-left h5, .work-example .work-header-left h2 {
-    max-width: 100%;
+    height: auto;
+    margin-bottom: 2.6em;
+    padding: 4.6em 0;
+    p {
+      padding-bottom: 0.3em;
+    }
   }
 
+  .work-example .work-header-left {
+    min-width: 48%;
+    width: 48%;
+    order: 1;
+  }
+  .work-example .work-image-right {
+    padding-top: 0em;
+    min-width: 40%;
+    width: 40%;
+    order: 2;
+  }
+  .work-example .work-links {
+    p {
+      padding: 0.8em 0em;
+    }
+    a {
+      @include font-size(1.1);
+    }
+  }
+  .work-example .work-header-left h4, .work-example .work-header-left h2 {
+    width: 100%;
+  }
+  .work-example .work-header-left h4 {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 0.4em;
+  }
+  .work-example .work-header-left h2 {
+    @include font-size(2.6);
+  }
 
 
 } /* min-width 1025px to max-width 1440px */
@@ -81,25 +193,51 @@
 // xtra-Large screens
 
 @media only screen and (min-width: 90.0625em) {
-
+  #work-example-1,  #work-example-2, #work-example-3, #work-example-4 {
+    margin-bottom: 8%;
+    margin-top: 1.1%;
+    p {
+      @include font-size(1.2);
+      line-height: 1.65;
+      margin-top: 0;
+      float: left;
+    }
+  }
   .work-example {
-    height: 560px;
+    height: auto;
+    margin-bottom: 2.6em;
+    padding: 6.2rem 0;
   }
+
   .work-example .work-header-left {
-    margin: 5rem 5rem;
-    max-width: 29%;
+
+    min-width: 44.5%;
+    width: 44.5%;
+    order: 1;
   }
-  .work-example .work-header-right {
-    padding: 4rem 3rem 0 0;
-    max-width: 48%;
+  .work-example .work-image-right {
+    min-width: 46%;
+    width: 46%;
+    order: 2;
   }
-  .work-example .work-header-left h5, .work-example .work-header-left h2 {
+
+  .work-example .work-links {
+    p {
+      padding: 0.8em 0em;
+    }
+    a {
+      @include font-size(1.1);
+      width: 30%;
+    }
+  }
+  .work-example .work-header-left h4, .work-example .work-header-left h2 {
     max-width: 100%;
   }
+  .work-example .work-header-left h4 {
+
+  }
   .work-example .work-header-left h2 {
-    margin-top: 1rem;
-    line-height: 1.3;
-    font-size: 3.4rem;
+    @include font-size(2.6);
   }
 
 } /* min-width 1440 */

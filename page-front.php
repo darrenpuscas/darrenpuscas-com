@@ -4,152 +4,118 @@ Template Name: Front Page
 */
 ?>
 
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <script src="//use.typekit.net/vts8skf.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7707954/783346/css/fonts.css" />
+    <?php wp_head(); ?>
+</head>
+
+<section id="site-description" class="grid">
+        <div class="masthead-description image-content-area nonscroll-fadeIn">
+            <?php the_field('dp_site_description'); ?>
+
+        </div>
+</section>
+
 <?php get_header(); ?>
 
 
-<section id="frontpage-description" class="grid row-tb-pad">
-
-    <div class="front-content text-content-area">
-
-        <header class="front-description-header">
-            <div class="front-description-text">
-                <h2>Web design<br /> </h2>
-            </div>
-            <div class="front-description-text">
-                <h4>Web design<br /> </h4>
-                <p>vfuowebvoregnbe wrpogner;lg bwe'ilfwepf wepfhwefpiwh g[oehg wpeghwo;bh vfuowebv oregn bewrp ogner;lgb we'iwh</p>
-            </div>
-            <div class="front-description-text">
-                <h4>& WordPress<br /> </h4>
-                <p>vfuowebvoregn bewrpo gner;lgbw e'ilfwepfw epfhwefpiwhg[ oehgwpe ner;l ssgbwe 'ilfwepfwepfh wefpiwhg[oehg wpeghwo;bh</p>
-            </div>
+<section id="site-description-2" class="grid row-tb-pad">
+    <div class="text-content-area">
+        <?php the_field('dp_site_description_2'); ?>
+    </div>
+</section>
 
 
 
-            <div class="front-description-text">
-                <h4>& User Experience </h4>
-                <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </p>
-            </div>
+<section id="skills-content" class="">
+
+
+    <div class="skills-area">
+
+
+        <div class="front-audit-care front-skills-1 front-skills-text-1">
+
+            <div class="front-skills-text front-offerings text-content-area">
 
 
 
 
-
-        </header>
-
-        <div class="home_image home_image-1">
-
-            <div class="">
+                <h2><?php the_field('skills_header_1'); ?></h2>
 
 
-                <div class="front-description-text">
-                    <h4>& Communications / Content Strategy </h4>
-                    <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </p>
-                </div>
 
-                <p><?php if( get_field('dp_site_description_image') ): ?>
-
-                    <img src="<?php the_field('dp_site_description_image'); ?>" />
-
-                <?php endif; ?></p>
-
-                <div class="front-description-text">
-                    <h4>& problem-solving </h4>
-                    <p>vfuowebv oregnbewrpog ner;lgbwe'ilfw epfwepf hwefpi whg[oehgwpeghwo;bh </p>
-                </div>
-
-                <div class="front-description-text">
-                    <a class="frontpage-button-link button-link button" href="<?php the_field('have_project_button'); ?>">Do you have a project you need help with?</a>
-                </div>
+                <?php the_field('skills_text_1'); ?>
 
 
 
             </div>
 
         </div>
+
+
+        <div class="front-audit-care front-skills-2 front-skills-text-2">
+
+
+            <div class="front-skills-text front-offerings text-content-area">
+
+                <h2>
+
+                    <?php the_field('skills_header_2'); ?>
+                </h2>
+
+
+                <?php the_field('skills_text_2'); ?>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="site-description-image nonscroll-fadeIn-2">
+
+    <?php if( get_field('dp_site_description_image') ): ?>
+        <img src="<?php the_field('dp_site_description_image'); ?>" />
+    <?php endif; ?>
+
+</section>
+
+
+
+
+<section id="site-description-3" class="grid row-tb-pad">
+    <div class="text-content-area">
+        <h1> <?php the_field('about_skills_header_2'); ?></h1>
+        <?php the_field('about_skills_text_2'); ?>
+    </div>
+</section>
+
+
+<section id="site-description-4" class="grid row-tb-pad">
+
+    <div class="front-email-optin text-content-area">
+        <h1>Subscribe:</h1>
+
+        <p><input type="email" id="mc4wp_email" name="EMAIL" placeholder="Your email address" required /> <input type="submit" value="Sign up" /></p>
+        <small>
+            Receive tips & insights about WordPress, web design, content strategy, & usability to improve your site and achieve results.
+        </small>
+
     </div>
 
 </section>
 
 
 
-
-
-
-<section id="frontpage-description-2" class="grid row-bottom-pad">
-
-	<div class="home-description-list text-content-area">
-		<h1><?php the_field('dp_site_description_notes'); ?></h1>
-		<h5>User experience design, Email design and marketing, WordPress site design & development, WordPress support.</h5>
-	</div>
-
-	<figure class="home-thumb image-content-area figure-content-margin">
-
-		<?php if( get_field('darren_puscas_home_image_2') ): ?>
-
-			<img src="<?php the_field('darren_puscas_home_image_2'); ?>" />
-
-		<?php endif; ?>
-
-	</figure>
-
-</section>
-
-
-
-<section id="front-bodycontent">
-
-            <div class="front-work row-bottom-pad">
-                <div class="section-header text-content-area"><h1>Recent work</h1></div>
-
-                <div class="frontpage-links recent-work-1">
-                    <div class="recent-work text-content-area"><?php the_field('recent_work_1'); ?></div>
-                </div>
-                <div class="frontpage-links recent-work-2">
-                    <div class="recent-work text-content-area"><?php the_field('recent_work_2'); ?></div>
-                </div>
-                <div class="frontpage-links recent-work-3">
-                    <div class="recent-work text-content-area"><?php the_field('recent_work_3'); ?></div>
-                </div>
-
-
-            </div>
-
-
-            <div class="blog row-bottom-pad">
-
-                <div class="blog-section-header text-content-area"><h1>Latest news</h1></div>
-
-                <?php $the_query = new WP_Query( 'showposts=3' ); ?>
-                <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-
-
-
-                    <div class="blog-content">
-	                    <div class="page-links text-content-area">
-
-	                        <div class="blogtitle">
-		                        <?php the_date(); ?>
-
-	                            <h3>
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                </h3>
-	                        </div>
-	                    </div>
-
-                    </div><!-- .frontblog-content  -->
-
-                <?php endwhile;?>
-
-	            <header class="description-header text-content-area">
-		            <a class="frontpage-button-link button-link button" href="../darrenpuscas/blog" target="_parent">More news articles...</a>
-	            </header>
-
-            </div>
-
-
-
-</section><!-- #front-bodycontent -->
 
 
 <?php get_footer(); ?>

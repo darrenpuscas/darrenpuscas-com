@@ -7,14 +7,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="grid row-bottom-pad">
+	<div id="primary" class="grid row-tb-pad">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<div class="post-naigation text-content-area"><?php the_post_navigation(); ?></div>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template

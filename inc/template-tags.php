@@ -127,6 +127,30 @@ function darrenpuscas_entry_footer() {
 }
 endif;
 
+if ( ! function_exists( 'darrenpuscas_search_footer' ) ) :
+    /**
+     * Prints HTML with meta information for the categories, tags and comments.
+     */
+    function darrenpuscas_search_footer() {
+        // Hide category and tag text for pages.
+        if ( 'post' == get_post_type() ) {
+            /* translators: used between list items, there is a space after the comma */
+            $categories_list = get_the_category_list( __( ', ', 'darrenpuscas' ) );
+            if ( $categories_list && darrenpuscas_categorized_blog() ) {
+                printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'darrenpuscas' ) . '</span>', $categories_list );
+            }
+
+            /* translators: used between list items, there is a space after the comma */
+            $tags_list = get_the_tag_list( '', __( ', ', 'darrenpuscas' ) );
+            if ( $tags_list ) {
+                printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'darrenpuscas' ) . '</span>', $tags_list );
+            }
+        }
+
+        edit_post_link( __( 'Edit', 'darrenpuscas' ), '<span class="edit-link">', '</span>' );
+    }
+endif;
+
 if ( ! function_exists( 'the_archive_title' ) ) :
 /**
  * Shim for `the_archive_title()`.

@@ -13,10 +13,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <script src="//use.typekit.net/vts8skf.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7707954/783346/css/fonts.css" />
 <?php wp_head(); ?>
+    <script type="text/javascript" src="/js/min/respond.min.js"></script>
 </head>
 
 
@@ -29,7 +28,7 @@
         <div class="site-header">
 
 
-                <div class="site-title">
+                <div class="site-title nonscroll-fadeInUp">
                     <i class="fa fa-chevron-circle-up"></i>
 
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -37,11 +36,12 @@
                 </div>
 
 
-                <nav id="site-navigation" class="main-navigation" role="navigation">
+                <nav id="site-navigation" class="main-navigation sticky" role="navigation">
 
                     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
                 </nav><!-- #site-navigation -->
+
 
 
         </div>

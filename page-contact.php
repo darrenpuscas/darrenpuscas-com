@@ -9,24 +9,22 @@ Template Name: Contact Page
 
     <section id="contact-page-description" class="grid row-tb-pad">
 
+
+
         <header class="contact-header text-content-area">
             <h1> <?php the_field('contact_header_1'); ?></h1>
-
         </header>
+
         <div class="contact-form text-content-area">
-            <h5><?php the_field('contact_text_1'); ?></h5>
+
+            <?php the_field('contact_text_1'); ?>
         </div>
 
-        <figure class="contact-thumb image-content-area figure-content-margin">
 
-            <?php if( get_field('contact_image_1') ): ?>
 
-                <img src="<?php the_field('contact_image_1'); ?>" />
-
-            <?php endif; ?>
-
-        </figure>
-
+        <div class="contact-form text-content-area">
+            <?php the_field('contact_form'); ?>
+        </div>
 
     </section>
 

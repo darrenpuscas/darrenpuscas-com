@@ -1,183 +1,192 @@
+.home .head {
 
-
-.front-content {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  margin-top: 0rem;
 }
+.home .site-header a{
 
-.front-description-text {
-  margin: 0rem 3rem 2.3rem 0;
 }
-.front-description-text h1 {
+html .home {
   margin-top: 0;
-  margin-bottom: 2.4rem;
-  font-weight: 700;
 }
 
-.front-description-text p {
-  margin-top: 0;
-  font-size: 1.0rem;
-  line-height: 1.5;
+.masthead-image img {
+  margin: 2em auto 1.6em;
 }
-
-
-#frontpage-description-2 p {
-  margin: 0.7rem 0 0rem;
+#site-description {
+  background-color: $color__background_blue;
 }
-#frontpage-description-2 {
-  clear: both;
+.front-skills-text-1 {
+  background-color: $color__background_blue;
+  color: #3f3f3f;
 }
+.front-skills-text-2 {
+  background-color: $color__background_orange;
 
-.front-work h1, .blog h1  {
-  max-width: 30%;
+
+
 }
-
-
-.frontpage-button-link {
-  display: block;
-  position: relative;
-  font-family: $font__headings_secondary;
+#site-description h1 {
+  font-weight: 600;
+  @include font-size(3.4);
+  line-height: 1.3;
+  text-decoration: none;
+  color: #fff;
+  font-family: $font__main;
+  letter-spacing: 0em;
+  margin: 0 auto;
   text-align: center;
-  font-size: 0.9rem;
-  margin-top: 3%;
-  margin-bottom: 7%;
-}
-
-.home-description-list {
-  padding: 0rem 0rem 1.2rem;
-  font-family: $font__headings;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: $color__text-main;
-  line-height: 1.5;
-  text-transform: none;
+  padding-top: 40%;
+  padding-bottom: 40%;
 
 }
 
-.page-links  {
-  border-bottom: 1px solid #dedede;
-  padding: 1.6rem 0;
-  color: #787878;
-}
-.page-links a {
-  color: #787878;
-}
-.page-links h3 {
-  padding: 0.6rem 0 0.6rem;
-  margin-bottom: 0;
-}
-.front-work, .frontblog {
+#site-description-2 {
+  padding-bottom: 6%;
 
+  background-color: #efefef;
 }
-.front-work h1, .blog h1, .front-work h3, .blog h3 {
-  padding-bottom: 0.5rem;
-  max-width: 100%;
-  padding-left: 5%;
+#site-description-3 {
+  background-color: #efefef;
 }
 
-.recent-work-3 {
-  border-bottom: 3px solid #222;
+#site-description-4 {
+  border-top: 1px solid #222;
+}
+#skills-content {
+
+}
+.site-description {
+  margin-top: 2em;
+}
+.front-audit-care {
+  width: 100%;
 }
 
+ // Medium screens
 
-// Medium screens
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
 
-@media only screen and (min-width: 40.0625em) and (max-width:64em) {
+    .masthead img {
+      margin: 2em auto 4em;
+    }
+    #site-description h1 {
+      @include font-size(4.1);
+      line-height: 1.4;
+      padding-top: 29%;
+      padding-bottom: 29%;
+    }
 
-  .frontpage-button-link {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 3%;
-    margin-bottom: 7%;
-    width: 80%;
-  }
-  .front-work h1, .blog h1, .front-work h3, .blog h3 {
-    padding-bottom: 0rem;
-    padding-left: 5%;
-  }
+    #site-description-2 {
+      padding-bottom: 8%;
+      border-top: 1px solid #787878;
+    }
 
-  .home_image { flex: 1 100%; }
+    .skills-image-front {
+      width: 10%;
+      padding-bottom: 2.6em;
+    }
 
-  .front-description-header   { flex: 1 100%; }
-  .home_image-1 { order: 2; }
-  .front-description-header   { order: 1; }
-
-} /* min-width 641px to max-width 1024px */
-
-
-// Large screens
-
-@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
-
-  .front-content {
-    margin-top: 4rem;
-  }
-  .frontpage-button-link {
-    text-align: center;
-    font-size: 1.3rem;
-    margin-top: 3%;
-    margin-bottom: 7%;
-    width: 80%;
-  }
-  .front-work h1, .blog h1, .front-work h3, .blog h3 {
-    padding-bottom: 0rem;
-    padding-left: 0%;
-  }
-
-  .home_image { flex: 2 0px; }
-
-  .front-description-header   { flex: 2 0px; }
-  .home_image-1 { order: 2; }
-  .front-description-header   { order: 1; }
+  }  /* min-width 641px to max-width 1024px */
 
 
+  // Large screens
 
-} /* min-width 1025px to max-width 1440px */
+  @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+
+    .mastheadimage img {
+      margin: 2.6em 0 2.2em;
+    }
+
+    #site-description h1 {
+      @include font-size(6.0);
+      line-height: 1.3;
+      padding-top: 30%;
+      padding-bottom: 30%;
+    }
+
+    .front-content {
+      margin-top: 4em;
+    }
+    #site-description-2 {
+      padding-bottom: 10.5%;
+      border-top: 1px solid #787878;
+    }
+
+    .front-skills-text-1, .front-skills-text-2 {
+      height: auto;
+    }
+    .front-skills-text-1 {
+      border-top: 4px solid #fff;
+      border-bottom: 4px solid #fff;
+      border-right: 2px solid #fff;
+      border-left: 4px solid #fff;
+    }
+    .front-skills-text-2 {
+      border-top: 4px solid #fff;
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #fff;
+      border-left: 2px solid #fff;
+    }
+    .front-audit-care {
+      width: 50%;
+    }
 
 
-// xtra-Large screens
+  } /* min-width 1025px to max-width 1440px */
 
-@media only screen and (min-width: 90.0625em) {
+  // xtra-Large screens
 
-  .front-content {
-    margin-top: 4rem;
-  }
-  .front-description-text {
-    margin: 0rem 4rem 2.2rem 0;
-  }
-  .frontpage-button-link {
-    text-align: center;
-    font-size: 1.3rem;
-    margin-top: 15%;
-    margin-bottom: 4%;
-    width: 100%;
-  }
-  .page-links {
-    padding: 2rem 0 4rem;
-    font-size: 1.3rem;
-  }
-  .front-work h1, .blog h1, .front-work h3, .blog h3 {
-    padding-bottom: 0rem;
-    padding-left: 0%;
-  }
+  @media only screen and (min-width: 90.0625em) {
+    .masthead {
+      width: 100%;
+    }
+    .masthead-description {
+      width: 100%;
+    }
+    .masthead-image {
+      width: 30%;
+      margin: 0 auto;
+    }
+
+    .masthead-image img {
+      margin: 2em auto 4em;
+    }
+    #site-description h1 {
+      @include font-size(7.2);
+      line-height: 1.5;
+      letter-spacing: 0em;
+      width: 100%;
+      padding-top: 28%;
+      padding-bottom: 28%;
+
+    }
+    #site-description-2 {
+      padding-bottom: 6%;
+      border-top: 1px solid #787878;
+    }
+    .front-skills-text-1, .front-skills-text-2 {
+      height: auto;
+    }
+    .front-skills-text-1 {
+      border-top: 8px solid #fff;
+      border-bottom: 8px solid #fff;
+      border-right: 6px solid #fff;
+      border-left: 8px solid #fff;
+    }
+    .front-skills-text-2 {
+      border-top: 8px solid #fff;
+      border-bottom: 8px solid #fff;
+      border-right: 8px solid #fff;
+      border-left: 4px solid #fff;
+    }
+
+    .front-audit-care {
+      width: 50%;
+    }
+    .skills-image-front {
+      width: 19%;
+      padding-bottom: 1em;
+    }
 
 
-  .home_image { flex: 2 0px; }
 
-
-  .front-description-header   { flex: 2 0px; }
-    .home_image-1 { order: 2; }
-    .front-description-header   { order: 1; }
-
-
-
-
-} /* min-width 1440 */
-
-
+} /* min-width 1440px */

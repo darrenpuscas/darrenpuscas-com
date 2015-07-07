@@ -1,0 +1,237 @@
+
+#front-bodycontent {
+  .blog {
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .blog-content {
+    position: relative;
+    padding: 0em 0.9em 0.4em;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border: 0px solid #fff;
+
+  }
+  .blog-textcontent {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: auto;
+  }
+  .blogtitle h5 {
+    letter-spacing: 0.1em;
+    @include font-size(1);
+    opacity: 1;
+    background-color: #eb1d34;
+    color: #fff;
+    padding: 0.3em 0.3em;
+    font-weight: 400;
+  }
+  .blog-content:hover > .blog-excerpt {
+    opacity: 1;
+    color: #ffffff;
+  }
+  .blog-excerpt {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    border-top: 1px solid #787878;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5% 7% 0.6em;
+    width: 100%;
+    height: 80%;
+    float: left;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.2s ease-in 0.2s;
+    -moz-transition: opacity 0.3s ease-in 0.35s;
+    -webkit-transition: opacity 0.2s ease-in 0.2s;
+  }
+
+  .thegroup {
+    opacity: 1;
+    transition: opacity 0.2s ease-out 0.25s;
+    -moz-transition: opacity 0.2s ease-out 0.35s;
+    -webkit-transition: opacity 0.7s linear 0.1s;
+  }
+  .blog-content:hover > .thegroup {
+    opacity: 0;
+  }
+  .blog-date {
+    float: left;
+  }
+  .blog-meta, .blog-readmore {
+    font-family: $font__headings;
+    float: left;
+    color: #eb1d34;
+    width: 100%;
+    @include font-size(0.8);
+  }
+  .blog-meta {
+    margin: 0.9em 0 0.8em;
+    padding: 0.2em 0;
+  }
+
+  .blog-meta ul a {
+    margin-right: 0em;
+  }
+
+
+  p {
+    float: left;
+    padding: 2% 0;
+    margin: 0;
+    line-height: 1.5;
+    max-width: 100%;
+    @include font-size(0.9);
+    font-family: "$font__headings", sans-serif;
+  }
+
+}
+.indiv-blog-posts:nth-child(0) {
+  background-color: $color__background_blue;
+}
+
+// Medium screens
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+
+
+
+  #front-bodycontent {
+    .blog-excerpt {
+      top: 5%;
+      left: 5%;
+      width: 90%;
+    }
+    .blog-content {
+      width: 49.6%;
+
+    }
+    .blog-textcontent {
+      max-width: 60%;
+      top: 3%;
+    }
+    .blog-title {
+      padding: 0.4em 0 0.2em;
+      max-width: 50%;
+    }
+    .blogtitle a {
+      @include font-size(2.2);
+    }
+    .blog-title h5 {
+      @include font-size(1.7);
+    }
+    p {
+      padding: 1% 0;
+      margin: 0;
+      @include font-size(0.9);
+      line-height: 1.6;
+    }
+
+  }
+
+
+
+} /* min-width 641px to max-width 1024px */
+
+
+// Large screens
+
+@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+
+
+
+
+
+
+  #front-bodycontent {
+
+
+    .blog-content {
+      width: 33.0%;
+      padding-bottom: 1em;
+    }
+    .blog-textcontent {
+      padding-top: 0.6em;
+    }
+    .blog-excerpt {
+      top: 3%;
+      left: 6%;
+      margin-top: 0.2em;
+      padding: 5% 7% 0.6em;
+      max-width: 90%;
+    }
+    .blogtitle a {
+      @include font-size(2);
+    }
+    .blog-title {
+      padding: 0.4em 0 0.2em;
+      max-width: 70%;
+    }
+    .blog-title h5 {
+      @include font-size(2);
+    }
+    p {
+      padding: 0.2em 0;
+      margin: 0;
+      @include font-size(0.9);
+      line-height: 1.5;
+    }
+
+  }
+
+} /* min-width 1025px to max-width 1440px */
+
+
+
+// xtra-Large screens
+
+@media only screen and (min-width: 90.0625em) {
+
+  #front-bodycontent {
+    .blog-textcontent {
+      position: absolute;
+      top: 35px;
+      left: 0px;
+      width: 70%;
+    }
+    .blog-excerpt {
+      top: 10%;
+      left: 10%;
+      max-width: 80%;
+
+    }
+    .blogtitle h5 {
+      @include font-size(1.3);
+      line-height: 1.3;
+      text-align: center;
+      margin: 0 auto;
+
+    }
+    .blog-content {
+      width: 48%;
+      padding: 0 0.7em 2em;
+    }
+
+    p {
+      padding-top: 3%;
+      padding-bottom: 3%;
+      @include font-size(1);
+      max-width: 100%;
+      line-height: 1.5;
+    }
+
+  }
+
+} /* min-width 1440px */

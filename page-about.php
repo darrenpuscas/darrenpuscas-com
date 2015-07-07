@@ -7,15 +7,15 @@ Template Name: About Page
 <?php get_header(); ?>
 
 
-<section id="aboutpage-description" class="grid row-top-pad">
+<section id="aboutpage-description" class="grid row-tb-pad">
 
-    <header class="about-header text-content-area">
+    <header class="about-header text-content-area nonscroll-fadeIn">
         <h1> <?php the_field('about_header_1'); ?></h1>
-        <h5><?php the_field('about_text_1'); ?></h5>
+        <p><?php the_field('about_text_1'); ?></p>
     </header>
 
 
-	<figure class="about-thumb image-content-area figure-content-margin">
+	<figure class="about-thumb image-content-area figure-content-margin nonscroll-fadeIn-2">
 
 	    <?php if( get_field('about_image_1') ): ?>
 
@@ -28,15 +28,16 @@ Template Name: About Page
 
 </section>
 
-<section id="aboutpage-description-2" class="grid row-bottom-pad">
 
-    <header class="about-header text-content-area animatable fadeIn">
+
+<section id="aboutpage-description-2" class="row-bottom-pad grid">
+
+    <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_2'); ?></h1>
-        <h5><?php the_field('about_text_2'); ?></h5>
+        <p><?php the_field('about_text_2'); ?></p>
     </header>
 
-
-    <figure class="about-thumb image-content-area figure-content-margin animatable fadeIn">
+    <figure class="about-thumb image-content-area figure-content-margin nonscroll-fadeIn-2">
 
         <?php if( get_field('about_image_2') ): ?>
 
@@ -46,14 +47,20 @@ Template Name: About Page
 
     </figure>
 
+    <div class="text-content-area figure-content-margin">
+        <small>Ok, the above chart is not an exact breakdown of my work, and there's actually a fair amount of overlap, but you get the picture :)</small>
+    </div>
 
 </section>
+
+
+
 
 <section id="aboutpage-description-3" class="grid row-bottom-pad">
 
     <header class="about-header text-content-area">
         <h1><?php the_field('about_header_3'); ?> </h1>
-        <h5><?php the_field('about_text_3'); ?></h5>
+        <p><?php the_field('about_text_3'); ?></p>
     </header>
 
 
@@ -67,6 +74,9 @@ Template Name: About Page
 
     </figure>
 
+    <div class="text-content-area figure-content-margin">
+        <p>"Soft skills" are also very important in my work. Listening. Building rapport and engaging with honesty and clarity. I recognize the risk you are taking in committing to a designer or developer and my goal is to help you reduce it as much as possible.</p>
+    </div>
 
 </section>
 
@@ -74,11 +84,11 @@ Template Name: About Page
 
     <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_4'); ?></h1>
-        <h5><?php the_field('about_text_4'); ?></h5>
+        <p><?php the_field('about_text_4'); ?></p>
     </header>
 
 
-    <figure class="about-thumb image-content-area figure-content-margin">
+    <figure class="about-thumb text-content-area figure-content-margin">
 
         <?php if( get_field('about_image_4') ): ?>
 
@@ -91,15 +101,15 @@ Template Name: About Page
 
 </section>
 
-<section id="aboutpage-description-5" class="grid row-bottom-pad">
+<section id="aboutpage-description-5" class="grid">
 
     <header class="about-header text-content-area">
         <h1> <?php the_field('about_header_5'); ?></h1>
-        <h5><?php the_field('about_text_5'); ?></h5>
+        <p><?php the_field('about_text_5'); ?></p>
     </header>
 
 
-    <figure class="about-thumb image-content-area figure-content-margin">
+    <figure class="about-thumb text-content-area figure-content-margin">
 
         <?php if( get_field('about_image_5') ): ?>
 

@@ -159,6 +159,9 @@ function darrenpuscas_scripts() {
 
     wp_enqueue_script( 'darrenpuscas-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+    wp_enqueue_script('darrenpuscas-respond', get_template_directory_uri() . '/js/min/respond.min.js', array(), '20150706', true );
+
+
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -192,3 +195,13 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 
+// change buttons in WYSWIG post editor, edit color palette
+function change_mce_options( $init ) {
+    $init['theme_advanced_blockformats'] = 'p,address,pre,code';
+    $init['theme_advanced_disable'] = 'numlist,blockquote,justifyright,justifycenter,pasteword,pastetext';
+    $init['theme_advanced_text_colors'] = '444444,FFFF00,000000';
+    $init['theme_advanced_more_colors'] = false;
+    return $init;
+}
+
+add_filter('tiny_mce_before_init', 'change_mce_options');
